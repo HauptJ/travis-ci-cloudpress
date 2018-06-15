@@ -20,6 +20,7 @@ RUN yum -y install \
 # Install Dependencies from Ansible Galaxy
 RUN ansible-galaxy install geerlingguy.repo-epel
 RUN ansible-galaxy install geerlingguy.repo-remi
+RUN ansible-galaxy install HauptJ.mariadb
 
 RUN sed -i -e 's/^\(Defaults\s*requiretty\)/#--- \1/'  /etc/sudoers
 

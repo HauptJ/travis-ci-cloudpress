@@ -6,5 +6,5 @@
   roles:
     - geerlingguy.repo-epel
     - geerlingguy.repo-remi
+    - HauptJ.mariadb
     - test_role
-

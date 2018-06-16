@@ -6,5 +6,8 @@
   roles:
     - geerlingguy.repo-epel
     - geerlingguy.repo-remi
+    - HauptJ.redis
+    - HauptJ.openresty
+    - HauptJ.mariadb
+    - HauptJ.php-fpm
     - test_role
-

@@ -5,5 +5,5 @@
 
   roles:
     - { role: geerlingguy.repo-epel, when: ansible_distribution == "CentOS" }
-    - { role: geerlingguy.repo-remi, ansible_distribution == "CentOS" }
+    - { role: geerlingguy.repo-remi, when: ansible_distribution == "CentOS" }
     - test_role

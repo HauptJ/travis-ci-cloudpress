@@ -4,6 +4,6 @@
   become: yes
 
   roles:
-    - geerlingguy.repo-epel
-    - geerlingguy.repo-remi
+    - { role: geerlingguy.repo-epel, when: ansible_distribution == "CentOS" }
+    - { role: geerlingguy.repo-remi, ansible_distribution == "CentOS" }
     - test_role
